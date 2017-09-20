@@ -1,0 +1,32 @@
+{
+  "name": "10-roast-shop-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www --exec babel-node",
+    "startDebug": "node --inspect-brk ./bin/www",
+    "startDebugBackup": "node --inspect --debug-brk bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.3",
+    "debug": "~2.6.3",
+    "ejs": "~2.5.6",
+    "express": "~4.15.2",
+    "express-graphql": "^0.6.6",
+    "express-jwt": "^5.3.0",
+    "graphql": "^0.10.3",
+    "jsonwebtoken": "^7.4.1",
+    "jwks-rsa": "^1.2.0",
+    "mongoose": "^4.10.8",
+    "morgan": "~1.8.1",
+    "node-sass-middleware": "0.9.8",
+    "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.0.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "nodemon": "^1.11.0"
+  }
+}

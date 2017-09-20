@@ -1,0 +1,43 @@
+// CONTACTS
+query nameHere ($parameter:String)
+{
+  contacts(stringifiedSearchObject: $parameter) {
+    first_name
+    addresses {
+      address1
+      address2
+      zip
+      city
+      country
+    }
+  }
+}
+
+// PAREMETERS static
+{
+  contacts(stringifiedSearchObject: "{\"addresses.city\": \"Helsinki\"}") {
+    first_name
+        last_name
+        email
+        addresses{
+          address1
+          address2
+          city
+        }
+      }
+    }
+
+// or
+
+{
+  contacts(stringifiedSearchObject: "{\"first_name\": \"Helsinki\"}") {
+    first_name
+        last_name
+        email
+        addresses{
+          address1
+          address2
+          city
+        }
+      }
+    }
